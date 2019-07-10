@@ -1,0 +1,86 @@
+{
+	"info": {
+		"_postman_id": "0763ed5c-a410-4a42-a27e-fdd5fdc720b4",
+		"name": "examenincidentes",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:3000/api/incidentes/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/incidentes/",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"incidentes",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/api/incidentes/ insert",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "descripcion",
+							"value": "llegada tarde ",
+							"type": "text"
+						},
+						{
+							"key": "tipo",
+							"value": "recurente",
+							"type": "text"
+						},
+						{
+							"key": "estado",
+							"value": "registrado",
+							"type": "text"
+						},
+						{
+							"key": "usuarioRegistra",
+							"value": "juangalindo",
+							"type": "text"
+						},
+						{
+							"key": "usuarioAsignado",
+							"value": "pedrogaldames",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/incidentes/",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"incidentes",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
